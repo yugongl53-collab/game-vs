@@ -507,6 +507,7 @@ int main()
         {
             if (aimingClock.getElapsedTime().asSeconds() >= aimingTimeout)
             {
+                shootSound.play();
                 gameFailed = true;
                 aimingTimerRunning = false;
                 isGamingBackground = false; // 停止 aiming 背景
